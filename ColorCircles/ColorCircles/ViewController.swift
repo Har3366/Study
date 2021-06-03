@@ -13,20 +13,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var pinkCircleView2: PinkCircleView!
     @IBOutlet weak var pinkCircleView3: PinkCircleView!
     
-    @IBAction func pinkCirclePanAction(_ gesture: UIPanGestureRecognizer) {
-        pinkCircleMoving(gesture)
-        pinkCircleMerge(pinkCircleView2, with: pinkCircleView)
-        pinkCircleMerge(pinkCircleView2, with: pinkCircleView3)
+    @IBAction func pinkCirclePanAction(_ recognizer: UIPanGestureRecognizer) {
+        circleMoving(recognizer)
+        circleMerge(pinkCircleView2, with: pinkCircleView,UIColor(#colorLiteral(red: 0.6035447121, green: 0, blue: 0.2712310255, alpha: 1)))
+        circleMerge(pinkCircleView2, with: pinkCircleView3,UIColor(#colorLiteral(red: 0.6035447121, green: 0, blue: 0.2712310255, alpha: 1)))
     }
-    @IBAction func pinkCircle2PanAction(_ gesture: UIPanGestureRecognizer) {
-        pinkCircleMoving(gesture)
-        pinkCircleMerge(pinkCircleView3, with: pinkCircleView)
-        pinkCircleMerge(pinkCircleView3, with: pinkCircleView2)
+    @IBAction func pinkCircle2PanAction(_ recognizer: UIPanGestureRecognizer) {
+        circleMoving(recognizer)
+        circleMerge(pinkCircleView3, with: pinkCircleView,UIColor(#colorLiteral(red: 0.6035447121, green: 0, blue: 0.2712310255, alpha: 1)))
+        circleMerge(pinkCircleView3, with: pinkCircleView2,UIColor(#colorLiteral(red: 0.6035447121, green: 0, blue: 0.2712310255, alpha: 1)))
     }
-    @IBAction func pinkCircle3PanAction(_ gesture: UIPanGestureRecognizer) {
-        pinkCircleMoving(gesture)
-        pinkCircleMerge(pinkCircleView, with: pinkCircleView2)
-        pinkCircleMerge(pinkCircleView, with: pinkCircleView3)
+    @IBAction func pinkCircle3PanAction(_ recognizer: UIPanGestureRecognizer) {
+        circleMoving(recognizer)
+        circleMerge(pinkCircleView, with: pinkCircleView2,UIColor(#colorLiteral(red: 0.6035447121, green: 0, blue: 0.2712310255, alpha: 1)))
+        circleMerge(pinkCircleView, with: pinkCircleView3,UIColor(#colorLiteral(red: 0.6035447121, green: 0, blue: 0.2712310255, alpha: 1)))
     }
     
     
@@ -36,29 +36,33 @@ class ViewController: UIViewController {
     let circleView4 = CircleView(frame: CGRect(x: 200.0, y: 400.0, width: 100.0, height: 100.0))
     
     @objc func circleViewMoving1(_ recognizer: UIPanGestureRecognizer){
-        circleMoving(recognizer, circleView1)
-        circleMerge(circleView2, with: circleView1)
-        circleMerge(circleView3, with: circleView1)
-        circleMerge(circleView4, with: circleView1)
+        //circleMoving(recognizer, circleView1)
+        circleMoving(recognizer)
+        circleMerge(circleView2, with: circleView1,UIColor(#colorLiteral(red: 0.5739061236, green: 0.6053475142, blue: 0.04792220145, alpha: 1)))
+        circleMerge(circleView3, with: circleView1,UIColor(#colorLiteral(red: 0.5739061236, green: 0.6053475142, blue: 0.04792220145, alpha: 1)))
+        circleMerge(circleView4, with: circleView1,UIColor(#colorLiteral(red: 0.5739061236, green: 0.6053475142, blue: 0.04792220145, alpha: 1)))
     }
     @objc func circleViewMoving2(_ recognizer: UIPanGestureRecognizer){
-        circleMoving(recognizer, circleView2)
-        circleMerge(circleView1, with: circleView2)
-        circleMerge(circleView3, with: circleView2)
-        circleMerge(circleView4, with: circleView2)
+        //circleMoving(recognizer, circleView2)
+        circleMoving(recognizer)
+        circleMerge(circleView1, with: circleView2,UIColor(#colorLiteral(red: 0.5739061236, green: 0.6053475142, blue: 0.04792220145, alpha: 1)))
+        circleMerge(circleView3, with: circleView2,UIColor(#colorLiteral(red: 0.5739061236, green: 0.6053475142, blue: 0.04792220145, alpha: 1)))
+        circleMerge(circleView4, with: circleView2,UIColor(#colorLiteral(red: 0.5739061236, green: 0.6053475142, blue: 0.04792220145, alpha: 1)))
     }
     @objc func circleViewMoving3(_ recognizer: UIPanGestureRecognizer){
-        circleMoving(recognizer, circleView3)
-        circleMerge(circleView1, with: circleView3)
-        circleMerge(circleView2, with: circleView3)
-        circleMerge(circleView4, with: circleView3)
+        //circleMoving(recognizer, circleView3)
+        circleMoving(recognizer)
+        circleMerge(circleView1, with: circleView3,UIColor(#colorLiteral(red: 0.5739061236, green: 0.6053475142, blue: 0.04792220145, alpha: 1)))
+        circleMerge(circleView2, with: circleView3,UIColor(#colorLiteral(red: 0.5739061236, green: 0.6053475142, blue: 0.04792220145, alpha: 1)))
+        circleMerge(circleView4, with: circleView3,UIColor(#colorLiteral(red: 0.5739061236, green: 0.6053475142, blue: 0.04792220145, alpha: 1)))
     }
     
     @objc func circleViewMoving4(_ recognizer: UIPanGestureRecognizer){
-        circleMoving(recognizer, circleView4)
-        circleMerge(circleView1, with: circleView4)
-        circleMerge(circleView2, with: circleView4)
-        circleMerge(circleView3, with: circleView4)
+        //circleMoving(recognizer, circleView4)
+        circleMoving(recognizer)
+        circleMerge(circleView1, with: circleView4,UIColor(#colorLiteral(red: 0.5739061236, green: 0.6053475142, blue: 0.04792220145, alpha: 1)))
+        circleMerge(circleView2, with: circleView4,UIColor(#colorLiteral(red: 0.5739061236, green: 0.6053475142, blue: 0.04792220145, alpha: 1)))
+        circleMerge(circleView3, with: circleView4,UIColor(#colorLiteral(red: 0.5739061236, green: 0.6053475142, blue: 0.04792220145, alpha: 1)))
     }
     
   

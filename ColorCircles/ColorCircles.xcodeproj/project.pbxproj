@@ -16,6 +16,7 @@
 		1C11A15A2662DE0600755161 /* CircleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C11A1592662DE0600755161 /* CircleView.xib */; };
 		1C11A15C2662DE2A00755161 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C11A15B2662DE2A00755161 /* CircleView.swift */; };
 		1C11A15E2662E9BE00755161 /* PinkCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C11A15D2662E9BE00755161 /* PinkCircleView.swift */; };
+		1C6388BB2668FFCC007C0BF5 /* ActionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6388BA2668FFCC007C0BF5 /* ActionFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1C11A1592662DE0600755161 /* CircleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleView.xib; sourceTree = "<group>"; };
 		1C11A15B2662DE2A00755161 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		1C11A15D2662E9BE00755161 /* PinkCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkCircleView.swift; sourceTree = "<group>"; };
+		1C6388BA2668FFCC007C0BF5 /* ActionFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				1C11A15D2662E9BE00755161 /* PinkCircleView.swift */,
 				1C11A1592662DE0600755161 /* CircleView.xib */,
 				1C11A15B2662DE2A00755161 /* CircleView.swift */,
+				1C6388BA2668FFCC007C0BF5 /* ActionFunctions.swift */,
 				1C11A14E2662DD8E00755161 /* Assets.xcassets */,
 				1C11A1502662DD8E00755161 /* LaunchScreen.storyboard */,
 				1C11A1532662DD8E00755161 /* Info.plist */,
@@ -152,6 +155,7 @@
 				1C11A15E2662E9BE00755161 /* PinkCircleView.swift in Sources */,
 				1C11A1462662DD8D00755161 /* AppDelegate.swift in Sources */,
 				1C11A1482662DD8D00755161 /* SceneDelegate.swift in Sources */,
+				1C6388BB2668FFCC007C0BF5 /* ActionFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

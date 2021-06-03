@@ -2,7 +2,7 @@
 import UIKit
 
 class PinkCircleView: UIView {
-
+    let className = "PinkCircleView"
     func setView() {
         layer.cornerRadius = frame.height/2
         backgroundColor = .systemPink

@@ -3,7 +3,8 @@ import UIKit
 class CircleView: UIView {
     @IBOutlet weak var circleView: UIView!
     var workingView:UIView!
-    var xibName: String = "CircleView"    
+    var xibName: String = "CircleView"
+    let className = "CircleView"
     func getFromXib(){
         let viewFromXib = Bundle.main.loadNibNamed(xibName, owner: self, options: nil)?[0] as! UIView
         addSubview(viewFromXib)
